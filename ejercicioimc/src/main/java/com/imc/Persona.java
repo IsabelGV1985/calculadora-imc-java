@@ -1,7 +1,7 @@
 package com.imc;
 
 public class Persona {
-    private double peso; // es de tipo DOUBLE ya que es numerico
+    private double peso;
     private double altura;
 
     // Generate Getters and Setters
@@ -21,6 +21,7 @@ public class Persona {
         this.altura = nuevaAltura;
     }
 
+    
     public double getIMC() {
         return peso / Math.pow(altura, 2);
     }

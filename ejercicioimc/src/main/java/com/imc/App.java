@@ -2,7 +2,6 @@ package com.imc;
 
 import java.util.Scanner;
 
-
 public final class App {
   private App() {
   }
@@ -16,14 +15,14 @@ public final class App {
     Scanner scanner = new Scanner(System.in);
 
     System.out.println("Por favor, ingresa tu peso (kg): ");
-    double peso = scanner.nextDouble(); // Lee la línea de texto peso
+    double peso = scanner.nextDouble(); // Read the line text Peso
     persona1.setPeso(peso);
 
     System.out.println("Por favor, ingresa su altura (m): ");
-    double altura = scanner.nextDouble(); // Lee la línea de texto altura
+    double altura = scanner.nextDouble(); // Read the line  text Altura
     persona1.setAltura(altura);
 
-    // Cierra el objeto Scanner para liberar recursos
+    // Closes the Scanner object to free resources
     scanner.close();
 
     System.out.println("Su peso introducido es:  " + persona1.getPeso());
@@ -39,13 +38,11 @@ public final class App {
     } else if (persona1.getIMC() < 30) {
       System.out.println("Sobrepeso");
     } else if (persona1.getIMC() < 35) {
-      System.out.println("Obesidad leve"); 
+      System.out.println("Obesidad leve");
     } else if (persona1.getIMC() < 40) {
       System.out.println("Obesidad moderada");
-    } else if (persona1.getIMC() > 40) {
+    } else {
       System.out.println("Obesidad mórbida");
     }
-
-    }
   }
-
+}
